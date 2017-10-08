@@ -11,7 +11,7 @@ var typed = new Typed(".typed", options);
 
 const displaySub = () => {
   let subIntro = $(".sub-intro")
-  subIntro.fadeIn()
+  subIntro.css({"color": "white"})
 }
 
 
