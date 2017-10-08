@@ -2,7 +2,23 @@
 
 var options = {
   strings: ["I'm Tyler", "I am a web developer"],
-  typeSpeed: 40
+  onComplete: function(self) { displaySub() },
+  fadeOut: true,
+  typeSpeed: 60
 }
 
-var typed = new Typed(".tagline", options);
+var typed = new Typed(".typed", options);
+
+const displaySub = () => {
+  let subIntro = $(".sub-intro")
+  subIntro.fadeIn()
+}
+
+
+$('#intro').height($(window).height())
+
+$(window).resize(function() {
+    $('#intro').height($(window).height());
+});
+
+$(window).trigger('resize');

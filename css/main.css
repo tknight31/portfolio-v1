@@ -1,3 +1,93 @@
+html, body {
+  height: 100%;
+  margin:0;
+  padding:0
+}
+
 body {
-  background: navy;
+  color: white;
+  background: #1b1b1b;
+}
+
+h1, h2, h3, h4, h5 {
+  color:white;
+}
+
+header {
+  position: fixed;
+  width:100%;
+  top:0;
+  padding:10px;
+}
+
+.logo {
+  float:left;
+}
+
+nav {
+    float:right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  margin-right:15px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+
+/*Intro Section*/
+
+#intro {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  display:flex;
+}
+
+.tagline {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  margin-bottom: 8px;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:3em;
+  display: inline-block;
+}
+
+.typed-cursor {
+  font-weight: 100;
+  padding: 0 2px;
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -ms-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub-intro {
+  display:none;
+  margin: 0;
+}
+
+
+.intro-content {
+  text-align: center;
+  margin:auto;
+
+}
+
+
+
+#space {
+  position: absolute;
+	top: 0;
+	left: 0;
+  z-index: -1;
 }
