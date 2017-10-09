@@ -3,40 +3,82 @@
   <head>
     <meta charset="utf-8">
     <title>Tyler Knight | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
 
-    <header>
+    <header id="header">
       <div class="logo"><span>TK</span></div>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="intro">
+      <canvas id="world"></canvas>
       <div class="intro-content">
         <h1 class="tagline"><span class="typed"></span></h1>
-        <p class="sub-intro">Here is some subtext</p>
+        <div class="sub-intro">
+          <p>Here is some subtext</p>
+          <div class="icons">
+            <a href="https://github.com/tknight31" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/tknight31/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://medium.com/@tknight31" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="main-section">
       <div class="about-content">
-        <h1>About</h1>
+        <h1 class="section-head">Hey, I'm Tyler.</h1>
+        <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
+        <span class="divider"></span>
+        <p>I'm a fourth year student at Northeastern University in Boston studying computer science and interaction design. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.</p>
+      </div>
+      <div class="image-holder">
+        <img src="img/headshot.jpg" alt="Tyler Knight - Software Engineer">
+      </div>
+    </section>
+
+    <section id="skills" class="main-section"
+    data-bottom-top="background-position: 15px 30%;"
+    data-top-bottom="background-position: -80px 50%;"
+    data-anchor-target="#skills"
+    >
+      <div class="black-overlay"></div>
+      <div class="skills-content">
+        <h1 class="section-head">My Skills.</h1>
+        <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
+        <span class="divider"></span>
+        <p>I'm a fourth year student at Northeastern University in Boston studying computer science and interaction design. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="main-section">
+      <div class="portfolio-content">
+        <h1 class="section-head">My Work.</h1>
+        <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
+        <span class="divider"></span>
+        <p>I'm a fourth year student at Northeastern University in Boston studying computer science and interaction design. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.</p>
       </div>
     </section>
 
 
 
     <script src="js/typed.js"></script>
-    <script type="text/javascript" src="js/index.js">
+    <script src="js/confetti.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
     </script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

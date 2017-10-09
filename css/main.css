@@ -13,11 +13,16 @@ h1, h2, h3, h4, h5 {
   color:white;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 header {
   position: fixed;
   width:100%;
   top:0;
   padding:10px;
+  z-index: 20;
 }
 
 .logo {
@@ -34,24 +39,38 @@ nav ul {
   margin-right:15px;
 }
 
+
 nav li {
   list-style: none;
   display: inline-block;
   margin: 0 40px;
-  padding-bottom: 8px;
   transition: all .3s ease-in-out;
 }
 
-nav li:hover {
-  border-bottom: white 3px solid;
+nav a {
+  color:white;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
 
+nav a:hover {
+  color:#00b7c7;
+  padding-bottom: 8px;
+  border-bottom: #00b7c7 3px solid;
+}
 
 /*Intro Section*/
+
+#world {
+  position: absolute;
+  opacity: .5;
+}
 
 #intro {
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   display:flex;
+  position: relative;
 }
 
 .tagline {
@@ -61,7 +80,7 @@ nav li:hover {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size:3em;
+  font-size:4em;
   display: inline-block;
 }
 
@@ -83,21 +102,94 @@ nav li:hover {
   color:transparent;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
-
 }
 
+.icons a {
+  font-size: 2.2em;
+  color:transparent;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  display: inline-block;
+  margin:0 2.5px;
+}
+
+.show-color .icons a:hover {
+  color:#00b7c7;
+}
+
+.sub-intro.show-color, .show-color .icons a  {
+  color:white;
+}
 
 .intro-content {
   text-align: center;
   margin:auto;
+  position: relative;
+  z-index: 2;
 
 }
 
+/*Main section common styles*/
+
+.main-section {
+  padding:100px;
+}
 
 
-#space {
+/*About Section*/
+
+#about {
+  background: #1b1b1b;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.section-head {
+  font-size:3em;
+}
+
+.image-holder {
+  margin-left: 70px;
+}
+
+.image-holder img {
+  border-radius: 50%;
+  width:400px;
+}
+
+.divider {
+  display: block;
+  margin: 30px 0;
+  width: 100px;
+  height: 6px;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*Skills Section*/
+
+#skills {
+  background-image: url('../img/city.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.skills-content {
+  z-index: 2;
+}
+
+.black-overlay {
+  background:black;
   position: absolute;
-	top: 0;
-	left: 0;
-  z-index: -1;
+  z-index: 1;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+
 }

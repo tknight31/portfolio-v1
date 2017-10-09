@@ -1,9 +1,8 @@
 
 
 var options = {
-  strings: ["I'm Tyler", "I am a web developer"],
+  strings: ["I'm Web Developer", "I'm Web Designer", "I'm Software Engineer", "I'm Tyler Knight"],
   onComplete: function(self) { displaySub() },
-  fadeOut: true,
   typeSpeed: 60
 }
 
@@ -11,7 +10,7 @@ var typed = new Typed(".typed", options);
 
 const displaySub = () => {
   let subIntro = $(".sub-intro")
-  subIntro.css({"color": "white"})
+  subIntro.addClass('show-color')
 }
 
 
@@ -22,3 +21,6 @@ $(window).resize(function() {
 });
 
 $(window).trigger('resize');
+
+
+// Scroll events
