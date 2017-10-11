@@ -6,24 +6,52 @@
     <link rel="stylesheet" href="icons/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:200,300,400,600" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
 
-    <header id="header">
-      <div class="logo"><span>TK</span></div>
+
+
+    <header id="header"
+      data-0="background: rgba(0, 0, 0, 0); font-size: 1.4em; padding-top: 20px;"
+      data-center-top="background: rgba(0, 0, 0, 1); font-size: 1.0em; padding-top: 10px;"
+      data-anchor-target="#about"
+    >
+      <div class="logo">
+          <span
+            data-0="color: rgba(255, 255, 255, 1);"
+            data-center-top="color: rgba(105, 214, 130, 1);"
+            data-anchor-target="#about"
+          >
+          {
+          </span>
+          <span> Tyler Knight </span>
+          <span
+            data-0="color: rgba(255, 255, 255, 1);"
+            data-center-top="color: rgba(105, 214, 130, 1);"
+            data-anchor-target="#about"
+          >
+          }
+          </span>
+      </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="intro">
-      <canvas id="world"></canvas>
+    <section id="intro"
+      data-center="background-position: 50% 0px;"
+      data-end="background-position: 50% -400px;"
+    >
+      <div class="main-overlay"></div>
+      <!-- <canvas id="world"></canvas> -->
       <div class="intro-content">
         <h1 class="tagline"><span class="typed"></span></h1>
         <div class="sub-intro">
@@ -37,39 +65,103 @@
       </div>
     </section>
     <section id="about" class="main-section">
-      <div class="about-content">
+      <div class="about-content"
+        data-center-top="opacity:0;"
+        data-top-top="opacity:1;"
+        data-anchor-target="#about"
+      >
         <h1 class="section-head">Hey, I'm Tyler.</h1>
         <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
         <span class="divider"></span>
         <p>I'm a fourth year student at Northeastern University in Boston studying computer science and interaction design. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.</p>
       </div>
-      <div class="image-holder">
+      <div class="image-holder"
+          data-center-top="left:50%; opacity:0;"
+          data-top-top="left:0px; opacity:1;"
+          data-anchor-target="#about"
+      >
         <img src="img/headshot.jpg" alt="Tyler Knight - Software Engineer">
       </div>
     </section>
 
     <section id="skills" class="main-section"
-    data-bottom-top="background-position: 15px 30%;"
-    data-top-bottom="background-position: -80px 50%;"
-    data-anchor-target="#skills"
+    data-center="background-position: 50% 0px;"
+    data-end="background-position: 50% -400px;"
     >
       <div class="black-overlay"></div>
-      <div class="skills-content">
+      <div class="skills-content"
+        data-center-top="opacity:0;"
+        data-top-top="opacity:1;"
+        data-anchor-target="#skills"
+      >
         <h1 class="section-head">My Skills.</h1>
-        <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
         <span class="divider"></span>
-        <p>I'm a fourth year student at Northeastern University in Boston studying computer science and interaction design. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.</p>
+        <div class="skills-wrapper">
+          <div>
+            <h4><i class="fa fa-code" aria-hidden="true"></i>Development</h4>
+              <ul class="skills-dev">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Ruby On Rails</li>
+                <li>SQL</li>
+                <li>Github</li>
+                <li>jQuery</li>
+              </ul>
+          </div>
+          <div>
+            <h4><i class="fa fa-paint-brush" aria-hidden="true"></i>Design</h4>
+              <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Indesign</li>
+                <li>Sketch</li>
+              </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="portfolio" class="main-section">
+    <section id="portfolio" class="main-section"
+      data-center-top="opacity:0;"
+      data-top-top="opacity:1;"
+      data-anchor-target="#portfolio"
+    >
       <div class="portfolio-content">
         <h1 class="section-head">My Work.</h1>
         <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
         <span class="divider"></span>
-        <p>I'm a fourth year student at Northeastern University in Boston studying computer science and interaction design. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.</p>
+
+        <div class="portfolio-item">
+          <h2>iintrinsic</h2>
+          <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+        </div>
+
+        <div class="portfolio-item">
+
+        </div>
+
+        <div class="portfolio-item">
+
+        </div>
+
       </div>
     </section>
+
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="icons">
+          <a href="https://github.com/tknight31" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/tknight31/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://medium.com/@tknight31" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+        </div>
+        <p>&copy; Tyler Knight 2017</p>
+      </div>
+    </footer>
 
 
 
