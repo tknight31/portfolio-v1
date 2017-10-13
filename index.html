@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Tyler Knight | Full Stack Web Developer</title>
-    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:200,300,400,600" rel="stylesheet">
@@ -36,7 +37,8 @@
           </span>
       </div>
       <nav>
-        <ul>
+        <a class="mobile-nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <ul class="nav-list">
           <li><a href="#intro">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -128,24 +130,139 @@
       data-center-top="opacity:0;"
       data-top-top="opacity:1;"
       data-anchor-target="#portfolio"
+      data-0-bottom="background: rgba(27,27,27,1);"
+      data-top-bottom="background: rgba(10,10,10,1);"
     >
       <div class="portfolio-content">
         <h1 class="section-head">My Work.</h1>
         <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
         <span class="divider"></span>
 
-        <div class="portfolio-item">
-          <h2>iintrinsic</h2>
-          <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+        <div class="portfolio-item"
+        data-bottom-top="opacity:0;"
+        data-center-top="opacity:1;"
+        >
+          <div class="project-img"><img src="img/iintrinsic.jpg" alt="iintrinsic"></div>
+          <div class="project-info">
+            <h2>iintrinsic</h2>
+            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+            <a class="button" href="https://github.com/tknight31/tiles-project-front" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/tiles-project-back" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a> <a class="button" href="https://iintrinsic-app.herokuapp.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i> Demo</a>
+            <div class="project-techs">
+              <p>React</p>
+              <p>Redux</p>
+              <p>JavaScript</p>
+              <p>Ruby on Rails</p>
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio-item">
 
+
+        <div class="portfolio-item"
+          data-center-top="opacity:0;"
+          data-top-top="opacity:1;"
+        >
+          <div class="project-img"><img src="img/piano-tiles.jpg" alt="Piano Tiles"></div>
+          <div class="project-info">
+            <h2>Piano Tiles</h2>
+            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+            <a class="button" href="https://github.com/tknight31/tiles-project-front" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/tiles-project-back" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a>
+            <div class="project-techs">
+              <p>Ruby on Rails</p>
+              <p>JavaScript</p>
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio-item">
 
+        <div class="portfolio-item"
+        data-center-top="opacity:0;"
+        data-top-top="opacity:1;"
+        >
+          <div class="project-img"><img src="img/votato.jpg" alt="Votato"></div>
+          <div class="project-info">
+            <h2>Votato</h2>
+            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+            <a class="button" href="https://github.com/tknight31/votato-front-end" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/votato-back-end" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a>
+            <div class="project-techs">
+              <p>React</p>
+              <p>JavaScript</p>
+              <p>Ruby on Rails</p>
+              <p>Zomato API</p>
+            </div>
+          </div>
         </div>
+
+
+        <div class="portfolio-item"
+        data-center-top="opacity:0;"
+        data-top-top="opacity:1;"
+        >
+          <div class="project-img"><img src="img/city-finder.jpg" alt="City Finder"></div>
+          <div class="project-info">
+            <h2>City Finder</h2>
+            <p>Find your perfect city. Tells us what things about a city you prioritize (cost of living, safety, venture capital, etc.) and we'll give you a list of cities and pertinent information that matches your priorities. Project utilizes React.js, CSS, Semantic UI and the Teleport API.</p>
+            <a class="button" href="https://github.com/tknight31/cityfinder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/tiles-project-back" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a>
+            <div class="project-techs">
+              <p>React</p>
+              <p>JavaScript</p>
+              <p>Teleport API</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item"
+        data-center-top="opacity:0;"
+        data-top-top="opacity:1;"
+        data-top-bottom="opacity:0;"
+        >
+          <div class="project-img"><img src="img/savr.jpg" alt="Savr"></div>
+          <div class="project-info">
+            <h2>Savr</h2>
+            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+            <a class="button" href="https://github.com/tknight31/savr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Code</a>
+            <div class="project-techs">
+              <p>Ruby On Rails</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="contact" class="main-section"
+    data-bottom-top="background: rgba(27,27,27,1);"
+    data-0-bottom="background: rgba(10,10,10,1);"
+    >
+      <div class="contact-content"
+      data-center-top="opacity:0;"
+      data-top-top="opacity:1;"
+      data-anchor-target="#contact"
+
+      >
+        <h1 class="section-head">Get In Touch.</h1>
+        <h3 class="section-subhead">Have something to say? Send a note.</h3>
+        <span class="divider"></span>
+        <form action="https://formspree.io/tknight331@gmail.com"
+        method="POST">
+          <div class="input-field">
+            <input type="text" name="name" required>
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" name="_replyto" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <textarea id="message" class="materialize-textarea" name="message"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <input type="hidden" name="_subject" value="New submission!" />
+
+          <input class="button" type="submit" value="Send">
+        </form>
+
 
       </div>
     </section>
@@ -166,10 +283,13 @@
 
 
     <script src="js/typed.js"></script>
-    <script src="js/confetti.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/b8a37c39f9.js"></script>
     <script type="text/javascript">
-      var s = skrollr.init();
+      window.onload = function() {
+        var s = skrollr.init();
+      };
     </script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>

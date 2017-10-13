@@ -25,6 +25,26 @@ $(window).resize(function() {
 $(window).trigger('resize');
 
 
+$(document).bind('click', function() {
+  debugger
+  console.log('document');
+  if ($('.nav-list').css('display') === 'block') {
+      $('.nav-list').fadeOut()
+  }
+});
+
+$('.mobile-nav').bind('click', function() {
+  console.log('nav specific');
+  if ($('.nav-list').css('display') === 'none') {
+    $('.nav-list').fadeIn()
+  } else {
+    $('.nav-list').fadeOut()
+  }
+});
+
+
+
+
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

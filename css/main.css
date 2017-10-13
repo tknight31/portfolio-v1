@@ -44,6 +44,10 @@ nav {
     float:right;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -57,14 +61,14 @@ nav li {
   margin: 0 40px;
 }
 
-nav a {
+.nav-list a {
   color:white;
   text-decoration: none;
   /*transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;*/
 }
 
-nav a:hover {
+.nav-list a:hover {
   color: rgba(105, 214, 130, 1);
   padding-bottom: 8px;
   border-bottom: rgba(105, 214, 130, 1) 3px solid;
@@ -247,6 +251,90 @@ nav a:hover {
   flex: 1 0;
 }
 
+/*Portfolio*/
+
+.portfolio-item {
+  display:flex;
+  margin-bottom: 50px;
+}
+
+.project-img {
+  flex:2;
+}
+.project-img img {
+  border-radius:8px;
+  max-width: 100%;
+}
+
+.project-info {
+  flex:1;
+  padding-left: 30px;
+}
+
+.project-info h2 {
+  margin-top:0;
+}
+
+.project-techs {
+  margin-top: 15px;
+}
+
+.project-techs p {
+  display:inline-block;
+  padding:4px 8px;
+  background: rgba(218, 218, 218, 0.13);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .6em;
+  border-radius: 8px;
+}
+
+.button {
+  display: inline-block;
+  padding:5px 10px;
+  color: rgba(105, 214, 130, 1);
+  border: rgba(105, 214, 130, 1) 1px solid;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  color: white;
+  background: rgba(105, 214, 130, 1);
+}
+
+/*Contact*/
+
+#contact {
+  position: relative;
+  /*background: rgba(14,14,14,1);*/
+}
+
+.contact-content {
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-content .divider {
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.contact-content form {
+    margin: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+input.button {
+  background: transparent;
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
 /*Footer*/
 footer {
   text-align: center;
@@ -261,5 +349,48 @@ footer .icons a {
 }
 
 footer .icons a:hover {
-  color:#00b7c7;
+  color:#1a5f51;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 1000px) {
+  .logo, nav {
+    font-size: .8em;
+  }
+  .nav-list {
+    display:none;
+    position: absolute;
+    right: 0;
+    font-size:1.3em;
+    top: 39px;
+  }
+
+  .nav-list a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: black;
+    position: relative;
+    height: 60px;
+    width: 310px;
+    right: -40px;
+    padding: 20px 12px;
+  }
+
+  .nav-list a:hover {
+    border-bottom: none;
+    color:white;
+    background: rgb(68, 140, 85);
+
+  }
+
+  .nav-list li {
+    display:block;
+  }
+
+  .mobile-nav {
+    margin-right: 30px;
+    display: block;
+  }
 }
