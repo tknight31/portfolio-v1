@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tyler Knight | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:200,300,400,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <header id="header"
+      data-0="background: rgba(0, 0, 0, 0); font-size: 1.4em; padding-top: 20px;"
+      data-center-top="background: rgba(0, 0, 0, 1); font-size: 1.0em; padding-top: 10px;"
+      data-anchor-target="#about"
+    >
+      <div class="logo">
+
+        <a href="index.html">
+          <span style="color:rgba(105, 214, 130, 1) " class="left">
+          {
+          </span>
+
+          <span> Tyler Knight </span>
+
+          <span style="color:rgba(105, 214, 130, 1)" class="right">
+          }
+          </span>
+        </a>
+      </div>
+    </header>
+    <section id="thank-you">
+      <div class="thank-you-content">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        <h1>Thank You!</h1>
+        <p>Your message has been sent.</p>
+        <a href="index.html" class="button">Return Home</a>
+      <div>
+    </section>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/b8a37c39f9.js"></script>
+    <script type="text/javascript">
+        $('#thank-you').height($(window).height())
+
+        $(window).resize(function() {
+            $('#thank-you').height($(window).height())
+        });
+
+        $(window).trigger('resize');
+    </script>
+  </body>
+</html>

@@ -31,6 +31,7 @@ p {
 header {
   position: fixed;
   width:100%;
+  box-sizing: border-box;
   top:0;
   padding:10px;
   z-index: 20;
@@ -40,25 +41,47 @@ header {
   float:left;
 }
 
+.logo a {
+  color:white;
+  display: inline-block;
+  position: relative;
+
+}
+.logo a:hover {
+  color:white;
+}
+
+
+
+.logo span {
+  position: relative;
+  transition: right .3s ease-in-out, left .3s ease-in-out;
+  -webkit-transition: right .3s ease-in-out, left .3s ease-in-out;
+  display: inline-block;
+}
+
+.left {
+  left:-4px;
+}
+
+.right {
+  right:-4px;
+}
+
+.logo a:hover .right {
+  right:-9px
+}
+
+.logo a:hover .left {
+  left:-9px
+}
+
 nav {
     float:right;
 }
 
 .mobile-nav {
   display: none;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  margin-right:15px;
-}
-
-
-nav li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 40px;
 }
 
 .nav-list a {
@@ -106,7 +129,9 @@ nav li {
 .tagline {
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
+  margin: auto;
   margin-bottom: 8px;
+  margin-top: 1em;
   color:white;
   font-size:4.5em;
   display: inline-block;
@@ -151,7 +176,6 @@ nav li {
   margin:auto;
   position: relative;
   z-index: 2;
-
 }
 
 /*Main section common styles*/
@@ -169,14 +193,33 @@ nav li {
   box-sizing: border-box;
 }
 
-.section-head {
-  font-size:3em;
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-title {
+  flex: 1 0 100%;
+}
+
+.about-content > p {
+    flex: 1 1;
+    order:2;
 }
 
 .image-holder {
   margin-left: 70px;
   position: relative;
+  flex: 1 1;
+  order:3;
 }
+
+.section-head {
+  font-size:3em;
+  margin-top: 0;
+}
+
+
 
 .image-holder img {
   border-radius: 50%;
@@ -198,6 +241,7 @@ nav li {
 
 #skills {
   background-image: url('../img/city.jpg');
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: top;
   display: flex;
@@ -212,7 +256,7 @@ nav li {
 
 .skills-wrapper {
   display: flex;
-  max-width: 1000px;
+  max-width: 1060px;
   margin: auto;
 }
 
@@ -249,6 +293,12 @@ nav li {
 
 .skills-wrapper > * {
   flex: 1 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.skills-wrapper > div:first-of-type {
+  border-right: solid rgba(255, 255, 255, 0.32) 1px;
 }
 
 /*Portfolio*/
@@ -273,6 +323,10 @@ nav li {
 
 .project-info h2 {
   margin-top:0;
+}
+
+.project-info .button {
+  margin-bottom: 4px;
 }
 
 .project-techs {
@@ -335,6 +389,24 @@ input.button {
   margin-top: 15px;
 }
 
+/*Contact*/
+
+#thank-you {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.thank-you-content h1 {
+  font-size: 4em;
+  margin: 0 auto;
+}
+.thank-you-content i {
+  font-size: 8em;
+}
+
+
 /*Footer*/
 footer {
   text-align: center;
@@ -355,42 +427,79 @@ footer .icons a:hover {
 /*Mobile*/
 
 @media only screen and (max-width: 1000px) {
-  .logo, nav {
-    font-size: .8em;
-  }
-  .nav-list {
-    display:none;
-    position: absolute;
-    right: 0;
-    font-size:1.3em;
-    top: 39px;
+
+  .about-content > p {
+      flex: 1 1;
+      order:3;
   }
 
-  .nav-list a {
+  .image-holder {
+    margin-left: 0;
+    text-align: center;
+    flex: 1 1 100%;
+    order:2;
+  }
+
+}
+
+@media only screen and (max-width: 860px) {
+
+  .main-section {
+    padding: 9%;
+  }
+
+  .skills-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .skills-wrapper > * {
+    flex: 1 0 100%;
+  }
+
+  .skills-wrapper > div:first-of-type {
+    border-right: none;
+    border-bottom: solid rgba(255, 255, 255, 0.32) 1px;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 780px) {
+
+  .portfolio-item {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-item::before {
+    content: "";
     display: block;
-    width: 100%;
-    box-sizing: border-box;
-    background: black;
-    position: relative;
-    height: 60px;
-    width: 310px;
-    right: -40px;
-    padding: 20px 12px;
+    margin: 30px auto;
+    width: 100px;
+    height: 6px;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-  .nav-list a:hover {
-    border-bottom: none;
-    color:white;
-    background: rgb(68, 140, 85);
-
+  .portfolio-item:first-of-type::before {
+    content: none;
   }
 
-  .nav-list li {
-    display:block;
+  .project-img {
+    flex:1 1 100%;
+    margin-bottom: 15px;
   }
 
-  .mobile-nav {
-    margin-right: 30px;
-    display: block;
+  .project-info {
+    flex:1 1 100%;
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .image-holder img {
+      max-width: 100%;
   }
 }

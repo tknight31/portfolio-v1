@@ -16,31 +16,16 @@ const displaySub = () => {
 
 $('#intro').height($(window).height())
 $('.bgc').height($(window).height())
+$('#thank-you').height($(window).height())
 
 $(window).resize(function() {
     $('#intro').height($(window).height());
     $('.bgc').height($(window).height());
+    $('#thank-you').height($(window).height())
 });
 
 $(window).trigger('resize');
 
-
-$(document).bind('click', function() {
-  debugger
-  console.log('document');
-  if ($('.nav-list').css('display') === 'block') {
-      $('.nav-list').fadeOut()
-  }
-});
-
-$('.mobile-nav').bind('click', function() {
-  console.log('nav specific');
-  if ($('.nav-list').css('display') === 'none') {
-    $('.nav-list').fadeIn()
-  } else {
-    $('.nav-list').fadeOut()
-  }
-});
 
 
 

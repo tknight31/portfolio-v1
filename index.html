@@ -20,31 +20,46 @@
       data-anchor-target="#about"
     >
       <div class="logo">
-          <span
-            data-0="color: rgba(255, 255, 255, 1);"
-            data-center-top="color: rgba(105, 214, 130, 1);"
-            data-anchor-target="#about"
+
+        <a href="#intro">
+          <span style="color:rgba(105, 214, 130, 1) " class="left"
+          data-0="color: rgba(255, 255, 255, 1);"
+          data-center-top="color: rgba(105, 214, 130, 1);"
+          data-anchor-target="#about"
           >
           {
           </span>
+
           <span> Tyler Knight </span>
-          <span
-            data-0="color: rgba(255, 255, 255, 1);"
-            data-center-top="color: rgba(105, 214, 130, 1);"
-            data-anchor-target="#about"
+
+          <span style="color:rgba(105, 214, 130, 1)" class="right"
+          data-0="color: rgba(255, 255, 255, 1);"
+          data-center-top="color: rgba(105, 214, 130, 1);"
+          data-anchor-target="#about"
           >
           }
           </span>
+        </a>
+
       </div>
       <nav>
-        <a class="mobile-nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        <ul class="nav-list">
-          <li><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-wrapper">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons fa fa-bars"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -57,7 +72,7 @@
       <div class="intro-content">
         <h1 class="tagline"><span class="typed"></span></h1>
         <div class="sub-intro">
-          <p>Here is some subtext</p>
+          <p>Full Stack Web Developer</p>
           <div class="icons">
             <a href="https://github.com/tknight31" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/tknight31/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -72,17 +87,32 @@
         data-top-top="opacity:1;"
         data-anchor-target="#about"
       >
-        <h1 class="section-head">Hey, I'm Tyler.</h1>
-        <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
-        <span class="divider"></span>
-        <p>I'm a fourth year student at Northeastern University in Boston studying computer science and interaction design. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.</p>
-      </div>
-      <div class="image-holder"
-          data-center-top="left:50%; opacity:0;"
-          data-top-top="left:0px; opacity:1;"
-          data-anchor-target="#about"
-      >
-        <img src="img/headshot.jpg" alt="Tyler Knight - Software Engineer">
+        <div class="about-title">
+          <h1 class="section-head">Hey, I'm Tyler.</h1>
+          <h3 class="section-subhead">I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</h3>
+          <span class="divider"></span>
+        </div>
+        <div class="image-holder"
+            data-center-top="left:50%; opacity:0;"
+            data-top-top="left:0px; opacity:1;"
+            data-anchor-target="#about"
+        >
+          <img src="img/tyler-knight-developer.jpg" alt="Tyler Knight - Software Engineer">
+        </div>
+
+        <p>
+          I am a full stack web developer with experience designing and
+          developing websites from concept to completion. I have a passion
+          for exploring new technologies and finding better ways to provide
+          intuitive user experiences. I really enjoy the balance of logic
+          and creativity that building applications requires. Starting out
+          as a designer and moving into a more technical role, I find pleasure
+          in bridging the gap between engineering and design. I strive to
+          write well designed, testable, efficient code to create functional
+          products that have a palpable impact on the lives of users. When
+          I’m not in front of my computer, I’m probably exploring the
+          city with my head phones in, or catching up on one of my many shows.
+        </p>
       </div>
     </section>
 
@@ -145,13 +175,14 @@
           <div class="project-img"><img src="img/iintrinsic.jpg" alt="iintrinsic"></div>
           <div class="project-info">
             <h2>iintrinsic</h2>
-            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
-            <a class="button" href="https://github.com/tknight31/tiles-project-front" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/tiles-project-back" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a> <a class="button" href="https://iintrinsic-app.herokuapp.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i> Demo</a>
+            <p>Out of the cluster of connections you've made start capitalizing on their ideas, or your own. Request to join teams or spark your own idea and invite others. Project utilizes React.js, Redux, Ruby on Rails and custom CSS.</p>
+            <a class="button" href="https://github.com/tknight31/iintrinsic-front-end" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/iintrinsic-back-end" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a> <a class="button" href="https://iintrinsic-app.herokuapp.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i> Demo</a>
             <div class="project-techs">
               <p>React</p>
               <p>Redux</p>
               <p>JavaScript</p>
               <p>Ruby on Rails</p>
+              <p>Google Maps API</p>
             </div>
           </div>
         </div>
@@ -165,7 +196,7 @@
           <div class="project-img"><img src="img/piano-tiles.jpg" alt="Piano Tiles"></div>
           <div class="project-info">
             <h2>Piano Tiles</h2>
-            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+            <p>An addictive JavaScript game designed to test your focus and speed. A remake of the popular <em>"Don't Tap The White Tile!"</em> game. Project utilizes JavaScript, Ruby on Rails and custom CSS.</p>
             <a class="button" href="https://github.com/tknight31/tiles-project-front" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/tiles-project-back" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a>
             <div class="project-techs">
               <p>Ruby on Rails</p>
@@ -182,7 +213,7 @@
           <div class="project-img"><img src="img/votato.jpg" alt="Votato"></div>
           <div class="project-info">
             <h2>Votato</h2>
-            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+            <p>If your group is having a hard time deciding where to eat, this app will help narrow down the options. Project utilizes React.js, Ruby on Rails, custom CSS and the Zomato API.</p>
             <a class="button" href="https://github.com/tknight31/votato-front-end" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/votato-back-end" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a>
             <div class="project-techs">
               <p>React</p>
@@ -202,7 +233,7 @@
           <div class="project-info">
             <h2>City Finder</h2>
             <p>Find your perfect city. Tells us what things about a city you prioritize (cost of living, safety, venture capital, etc.) and we'll give you a list of cities and pertinent information that matches your priorities. Project utilizes React.js, CSS, Semantic UI and the Teleport API.</p>
-            <a class="button" href="https://github.com/tknight31/cityfinder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Front End</a> <a class="button" href="https://github.com/tknight31/tiles-project-back" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Back End</a>
+            <a class="button" href="https://github.com/tknight31/cityfinder" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Code</a>
             <div class="project-techs">
               <p>React</p>
               <p>JavaScript</p>
@@ -219,7 +250,7 @@
           <div class="project-img"><img src="img/savr.jpg" alt="Savr"></div>
           <div class="project-info">
             <h2>Savr</h2>
-            <p>I'm a design-minded, detail oriented software engineer passionate about combining beautiful code with beautiful design.</p>
+            <p>When you have leftover food, instead of letting it go to waste connect to people in the area that are interesting in picking it up. Project utilizes custom CSS and Ruby on Rails.</p>
             <a class="button" href="https://github.com/tknight31/savr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Code</a>
             <div class="project-techs">
               <p>Ruby On Rails</p>
@@ -242,7 +273,7 @@
 
       >
         <h1 class="section-head">Get In Touch.</h1>
-        <h3 class="section-subhead">Have something to say? Send a note.</h3>
+        <h3 class="section-subhead">Have something to say? Send a note or email me directly at <a href="mailto:tknight331@gmail.com">tknight331@gmail.com</a>.</h3>
         <span class="divider"></span>
         <form action="https://formspree.io/tknight331@gmail.com"
         method="POST">
@@ -289,6 +320,7 @@
     <script type="text/javascript">
       window.onload = function() {
         var s = skrollr.init();
+        $(".button-collapse").sideNav();
       };
     </script>
     <script type="text/javascript" src="js/index.js"></script>
