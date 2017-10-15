@@ -27,7 +27,9 @@ $(window).resize(function() {
 $(window).trigger('resize');
 
 
-
+$('.mobile-link').click(function(){
+   $('.button-collapse').sideNav('hide');
+ })
 
 
 $(function() {
@@ -44,6 +46,20 @@ $(function() {
     }
   });
 });
+
+
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 90) {
+            $("#header").addClass("active");
+        } else {
+           $("#header").removeClass("active");
+        }
+    });
+});
+
+
+
 
 
 

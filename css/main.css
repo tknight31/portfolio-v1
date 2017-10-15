@@ -34,7 +34,20 @@ header {
   box-sizing: border-box;
   top:0;
   padding:10px;
+  height: 40px;
+  font-size: 1.2em;
   z-index: 20;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+header.active {
+  background: black;
+  font-size: 1em;
+}
+
+header.active .right, header.active .left  {
+  color:rgba(105, 214, 130, 1)
 }
 
 .logo {
@@ -501,5 +514,9 @@ footer .icons a:hover {
 @media only screen and (max-width: 500px) {
   .image-holder img {
       max-width: 100%;
+  }
+  .tagline {
+    width:98%;
+    margin: auto;
   }
 }
