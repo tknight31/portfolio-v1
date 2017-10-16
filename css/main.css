@@ -100,8 +100,8 @@ nav {
 .nav-list a {
   color:white;
   text-decoration: none;
-  /*transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;*/
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
 
 .nav-list a:hover {
@@ -116,11 +116,6 @@ nav {
 
 /*Intro Section*/
 
-#world {
-  position: absolute;
-  opacity: .5;
-  background: rgb(53, 53, 53);
-}
 
 #intro {
   display:flex;
